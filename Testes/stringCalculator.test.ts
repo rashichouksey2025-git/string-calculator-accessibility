@@ -1,4 +1,4 @@
-import { calculateSum } from '../src/Component/stringCalculator';
+import { calculateSum } from './../src/Component/stringCalculator';
 
 describe('calculateSum', () => {
   test('calculates sum of numbers separated by commas', () => {
@@ -26,7 +26,7 @@ describe('calculateSum', () => {
     expect(calculateSum('-1, -2, 3')).toBe(0);
   });
 
-  test('handles floating point numbers', () => {
+    test('handles floating point numbers', () => {
     expect(calculateSum('1.5, 2.5, 3')).toBe(7);
   });
 });
