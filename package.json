@@ -2,19 +2,24 @@
   "name": "string-calculator",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://yourusername.github.io/string-calculator",
   "type": "module",
+
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+},
+
   "dependencies": {
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
+  
   "devDependencies": {
     "@eslint/js": "^9.39.1",
+ 
     "@types/node": "^24.10.0",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
@@ -23,9 +28,16 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
-    "typescript": "~5.9.3",
     "typescript-eslint": "^8.46.3",
-    "vite": "npm:rolldown-vite@7.2.2"
+    "vite": "npm:rolldown-vite@7.2.2",
+    "jest": "^28.x",
+    "ts-jest": "^28.x",
+    "@types/jest": "^28.x",
+    "jest-environment-jsdom": "^28.x",
+    "@testing-library/react": "^14.x",
+    "@testing-library/jest-dom": "^6.x",
+    "@testing-library/user-event": "^14.x",
+    "typescript": "^5.x"
   },
   "overrides": {
     "vite": "npm:rolldown-vite@7.2.2"
